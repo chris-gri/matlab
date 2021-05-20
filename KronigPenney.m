@@ -41,7 +41,9 @@ for ii = 1:length(k_input)
         matrix_length = length(x);
     else 
         if matrix_length < length(x)
-            final_matrix = [final_matrix; NaN.*zeros(length(x)-matrix_length, ii-1)]; 
+            W = NaN.*zeros(length(x)-matrix_length;
+            
+            final_matrix = [final_matrix; W, ii-1)]; 
             matrix_length = length(x);
         else
             x = [x; NaN.*zeros(matrix_length - length(x), 1)];
