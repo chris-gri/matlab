@@ -1,4 +1,5 @@
 function [Q, D] = ElectroStaticDipoles(XYZ,R,F)
+    R'
     N = length(R)
     A = zeros(N)
    
