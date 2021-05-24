@@ -1,6 +1,6 @@
 function [F,X,Y,P] = SpherePotential(XYZ, Q, R, r0, a, b, Dx, Dy, Nxy)
  
-P=zeros(2);
+P=zeros(3, 2);
 c=b-(b'*a)/(a'*a)*a;
 if norm(c)<10^(-5)
    error('no way'); 
