@@ -45,6 +45,6 @@ function [Q, D] = ElectroStaticDipoles(XYZ,R,F)
     E = zeros(3*N,1)
     FE = [F; E]
     QP = B\FE
-    Q = QP(1:N,1)'
+    Q = QP(1:N,1)
     D = [QP(N+1:2*N,1), QP(2*N+1:3*N,1), QP(3*N+1:4*N,1)]
 end
